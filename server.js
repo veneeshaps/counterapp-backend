@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 console.log()
 // MongoDB Connection
-mongoose.connect('mongodb://aditya:1234@cluster0-shard-00-00.c0fnk.mongodb.net:27017,cluster0-shard-00-01.c0fnk.mongodb.net:27017,cluster0-shard-00-02.c0fnk.mongodb.net:27017/?ssl=true&replicaSet=atlas-uczoce-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://aditya:1234@cluster0.c0fnk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('Error connecting to MongoDB:', err));
 
